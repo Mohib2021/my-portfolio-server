@@ -36,11 +36,12 @@ const run = async () => {
 	} finally {
 	}
 };
-run().catch(console.dir());
+run().catch(console.dir);
 
 app.get("/", (req, res) => {
 	res.send("My Portfolio is working");
 });
 app.listen(port, () => {
 	console.log("server is running in ", port);
+	console.log(uri);
 });
